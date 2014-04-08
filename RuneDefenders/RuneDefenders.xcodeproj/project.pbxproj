@@ -396,6 +396,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "RuneDefenders/RuneDefenders-Prefix.pch";
 				INFOPLIST_FILE = "RuneDefenders/RuneDefenders-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SPRITEKIT_TEXTURE_ATLAS_OUTPUT = YES;
 				WRAPPER_EXTENSION = app;
@@ -410,6 +411,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "RuneDefenders/RuneDefenders-Prefix.pch";
 				INFOPLIST_FILE = "RuneDefenders/RuneDefenders-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SPRITEKIT_TEXTURE_ATLAS_OUTPUT = YES;
 				WRAPPER_EXTENSION = app;
@@ -477,6 +479,7 @@
 				BEF0F3EB18F3F4220056806B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		BEF0F3EC18F3F4220056806B /* Build configuration list for PBXNativeTarget "RuneDefendersTests" */ = {
 			isa = XCConfigurationList;
@@ -485,6 +488,7 @@
 				BEF0F3EE18F3F4220056806B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
