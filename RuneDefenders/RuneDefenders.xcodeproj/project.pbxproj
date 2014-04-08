@@ -1,0 +1,492 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		BEF0F3B418F3F4210056806B /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BEF0F3B318F3F4210056806B /* Foundation.framework */; };
+		BEF0F3B618F3F4210056806B /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BEF0F3B518F3F4210056806B /* CoreGraphics.framework */; };
+		BEF0F3B818F3F4210056806B /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BEF0F3B718F3F4210056806B /* UIKit.framework */; };
+		BEF0F3BA18F3F4210056806B /* SpriteKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BEF0F3B918F3F4210056806B /* SpriteKit.framework */; };
+		BEF0F3C018F3F4210056806B /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = BEF0F3BE18F3F4210056806B /* InfoPlist.strings */; };
+		BEF0F3C218F3F4210056806B /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = BEF0F3C118F3F4210056806B /* main.m */; };
+		BEF0F3C618F3F4210056806B /* RDAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = BEF0F3C518F3F4210056806B /* RDAppDelegate.m */; };
+		BEF0F3C918F3F4210056806B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BEF0F3C718F3F4210056806B /* Main.storyboard */; };
+		BEF0F3CC18F3F4210056806B /* RDViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BEF0F3CB18F3F4210056806B /* RDViewController.m */; };
+		BEF0F3CF18F3F4210056806B /* RDMyScene.m in Sources */ = {isa = PBXBuildFile; fileRef = BEF0F3CE18F3F4210056806B /* RDMyScene.m */; };
+		BEF0F3D118F3F4210056806B /* Spaceship.png in Resources */ = {isa = PBXBuildFile; fileRef = BEF0F3D018F3F4210056806B /* Spaceship.png */; };
+		BEF0F3D318F3F4210056806B /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BEF0F3D218F3F4210056806B /* Images.xcassets */; };
+		BEF0F3DA18F3F4210056806B /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BEF0F3D918F3F4210056806B /* XCTest.framework */; };
+		BEF0F3DB18F3F4220056806B /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BEF0F3B318F3F4210056806B /* Foundation.framework */; };
+		BEF0F3DC18F3F4220056806B /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BEF0F3B718F3F4210056806B /* UIKit.framework */; };
+		BEF0F3E418F3F4220056806B /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = BEF0F3E218F3F4220056806B /* InfoPlist.strings */; };
+		BEF0F3E618F3F4220056806B /* RuneDefendersTests.m in Sources */ = {isa = PBXBuildFile; fileRef = BEF0F3E518F3F4220056806B /* RuneDefendersTests.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		BEF0F3DD18F3F4220056806B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BEF0F3A818F3F4210056806B /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = BEF0F3AF18F3F4210056806B;
+			remoteInfo = RuneDefenders;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		BEF0F3B018F3F4210056806B /* RuneDefenders.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RuneDefenders.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		BEF0F3B318F3F4210056806B /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		BEF0F3B518F3F4210056806B /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		BEF0F3B718F3F4210056806B /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		BEF0F3B918F3F4210056806B /* SpriteKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SpriteKit.framework; path = System/Library/Frameworks/SpriteKit.framework; sourceTree = SDKROOT; };
+		BEF0F3BD18F3F4210056806B /* RuneDefenders-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "RuneDefenders-Info.plist"; sourceTree = "<group>"; };
+		BEF0F3BF18F3F4210056806B /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		BEF0F3C118F3F4210056806B /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		BEF0F3C318F3F4210056806B /* RuneDefenders-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "RuneDefenders-Prefix.pch"; sourceTree = "<group>"; };
+		BEF0F3C418F3F4210056806B /* RDAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RDAppDelegate.h; sourceTree = "<group>"; };
+		BEF0F3C518F3F4210056806B /* RDAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RDAppDelegate.m; sourceTree = "<group>"; };
+		BEF0F3C818F3F4210056806B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		BEF0F3CA18F3F4210056806B /* RDViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RDViewController.h; sourceTree = "<group>"; };
+		BEF0F3CB18F3F4210056806B /* RDViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RDViewController.m; sourceTree = "<group>"; };
+		BEF0F3CD18F3F4210056806B /* RDMyScene.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RDMyScene.h; sourceTree = "<group>"; };
+		BEF0F3CE18F3F4210056806B /* RDMyScene.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RDMyScene.m; sourceTree = "<group>"; };
+		BEF0F3D018F3F4210056806B /* Spaceship.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Spaceship.png; sourceTree = "<group>"; };
+		BEF0F3D218F3F4210056806B /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		BEF0F3D818F3F4210056806B /* RuneDefendersTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RuneDefendersTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		BEF0F3D918F3F4210056806B /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
+		BEF0F3E118F3F4220056806B /* RuneDefendersTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "RuneDefendersTests-Info.plist"; sourceTree = "<group>"; };
+		BEF0F3E318F3F4220056806B /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		BEF0F3E518F3F4220056806B /* RuneDefendersTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RuneDefendersTests.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		BEF0F3AD18F3F4210056806B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BEF0F3B618F3F4210056806B /* CoreGraphics.framework in Frameworks */,
+				BEF0F3B818F3F4210056806B /* UIKit.framework in Frameworks */,
+				BEF0F3BA18F3F4210056806B /* SpriteKit.framework in Frameworks */,
+				BEF0F3B418F3F4210056806B /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BEF0F3D518F3F4210056806B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BEF0F3DA18F3F4210056806B /* XCTest.framework in Frameworks */,
+				BEF0F3DC18F3F4220056806B /* UIKit.framework in Frameworks */,
+				BEF0F3DB18F3F4220056806B /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		BEF0F3A718F3F4210056806B = {
+			isa = PBXGroup;
+			children = (
+				BEF0F3BB18F3F4210056806B /* RuneDefenders */,
+				BEF0F3DF18F3F4220056806B /* RuneDefendersTests */,
+				BEF0F3B218F3F4210056806B /* Frameworks */,
+				BEF0F3B118F3F4210056806B /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		BEF0F3B118F3F4210056806B /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				BEF0F3B018F3F4210056806B /* RuneDefenders.app */,
+				BEF0F3D818F3F4210056806B /* RuneDefendersTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		BEF0F3B218F3F4210056806B /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				BEF0F3B318F3F4210056806B /* Foundation.framework */,
+				BEF0F3B518F3F4210056806B /* CoreGraphics.framework */,
+				BEF0F3B718F3F4210056806B /* UIKit.framework */,
+				BEF0F3B918F3F4210056806B /* SpriteKit.framework */,
+				BEF0F3D918F3F4210056806B /* XCTest.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		BEF0F3BB18F3F4210056806B /* RuneDefenders */ = {
+			isa = PBXGroup;
+			children = (
+				BEF0F3C418F3F4210056806B /* RDAppDelegate.h */,
+				BEF0F3C518F3F4210056806B /* RDAppDelegate.m */,
+				BEF0F3C718F3F4210056806B /* Main.storyboard */,
+				BEF0F3CA18F3F4210056806B /* RDViewController.h */,
+				BEF0F3CB18F3F4210056806B /* RDViewController.m */,
+				BEF0F3CD18F3F4210056806B /* RDMyScene.h */,
+				BEF0F3CE18F3F4210056806B /* RDMyScene.m */,
+				BEF0F3D018F3F4210056806B /* Spaceship.png */,
+				BEF0F3D218F3F4210056806B /* Images.xcassets */,
+				BEF0F3BC18F3F4210056806B /* Supporting Files */,
+			);
+			path = RuneDefenders;
+			sourceTree = "<group>";
+		};
+		BEF0F3BC18F3F4210056806B /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				BEF0F3BD18F3F4210056806B /* RuneDefenders-Info.plist */,
+				BEF0F3BE18F3F4210056806B /* InfoPlist.strings */,
+				BEF0F3C118F3F4210056806B /* main.m */,
+				BEF0F3C318F3F4210056806B /* RuneDefenders-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		BEF0F3DF18F3F4220056806B /* RuneDefendersTests */ = {
+			isa = PBXGroup;
+			children = (
+				BEF0F3E518F3F4220056806B /* RuneDefendersTests.m */,
+				BEF0F3E018F3F4220056806B /* Supporting Files */,
+			);
+			path = RuneDefendersTests;
+			sourceTree = "<group>";
+		};
+		BEF0F3E018F3F4220056806B /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				BEF0F3E118F3F4220056806B /* RuneDefendersTests-Info.plist */,
+				BEF0F3E218F3F4220056806B /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		BEF0F3AF18F3F4210056806B /* RuneDefenders */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BEF0F3E918F3F4220056806B /* Build configuration list for PBXNativeTarget "RuneDefenders" */;
+			buildPhases = (
+				BEF0F3AC18F3F4210056806B /* Sources */,
+				BEF0F3AD18F3F4210056806B /* Frameworks */,
+				BEF0F3AE18F3F4210056806B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = RuneDefenders;
+			productName = RuneDefenders;
+			productReference = BEF0F3B018F3F4210056806B /* RuneDefenders.app */;
+			productType = "com.apple.product-type.application";
+		};
+		BEF0F3D718F3F4210056806B /* RuneDefendersTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BEF0F3EC18F3F4220056806B /* Build configuration list for PBXNativeTarget "RuneDefendersTests" */;
+			buildPhases = (
+				BEF0F3D418F3F4210056806B /* Sources */,
+				BEF0F3D518F3F4210056806B /* Frameworks */,
+				BEF0F3D618F3F4210056806B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				BEF0F3DE18F3F4220056806B /* PBXTargetDependency */,
+			);
+			name = RuneDefendersTests;
+			productName = RuneDefendersTests;
+			productReference = BEF0F3D818F3F4210056806B /* RuneDefendersTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		BEF0F3A818F3F4210056806B /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = RD;
+				LastUpgradeCheck = 0500;
+				ORGANIZATIONNAME = TekkaInc;
+				TargetAttributes = {
+					BEF0F3D718F3F4210056806B = {
+						TestTargetID = BEF0F3AF18F3F4210056806B;
+					};
+				};
+			};
+			buildConfigurationList = BEF0F3AB18F3F4210056806B /* Build configuration list for PBXProject "RuneDefenders" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = BEF0F3A718F3F4210056806B;
+			productRefGroup = BEF0F3B118F3F4210056806B /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				BEF0F3AF18F3F4210056806B /* RuneDefenders */,
+				BEF0F3D718F3F4210056806B /* RuneDefendersTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		BEF0F3AE18F3F4210056806B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BEF0F3C018F3F4210056806B /* InfoPlist.strings in Resources */,
+				BEF0F3D318F3F4210056806B /* Images.xcassets in Resources */,
+				BEF0F3D118F3F4210056806B /* Spaceship.png in Resources */,
+				BEF0F3C918F3F4210056806B /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BEF0F3D618F3F4210056806B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BEF0F3E418F3F4220056806B /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		BEF0F3AC18F3F4210056806B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BEF0F3CF18F3F4210056806B /* RDMyScene.m in Sources */,
+				BEF0F3C618F3F4210056806B /* RDAppDelegate.m in Sources */,
+				BEF0F3C218F3F4210056806B /* main.m in Sources */,
+				BEF0F3CC18F3F4210056806B /* RDViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BEF0F3D418F3F4210056806B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BEF0F3E618F3F4220056806B /* RuneDefendersTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		BEF0F3DE18F3F4220056806B /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = BEF0F3AF18F3F4210056806B /* RuneDefenders */;
+			targetProxy = BEF0F3DD18F3F4220056806B /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		BEF0F3BE18F3F4210056806B /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				BEF0F3BF18F3F4210056806B /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		BEF0F3C718F3F4210056806B /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				BEF0F3C818F3F4210056806B /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		BEF0F3E218F3F4220056806B /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				BEF0F3E318F3F4220056806B /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		BEF0F3E718F3F4220056806B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		BEF0F3E818F3F4220056806B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		BEF0F3EA18F3F4220056806B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "RuneDefenders/RuneDefenders-Prefix.pch";
+				INFOPLIST_FILE = "RuneDefenders/RuneDefenders-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SPRITEKIT_TEXTURE_ATLAS_OUTPUT = YES;
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		BEF0F3EB18F3F4220056806B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "RuneDefenders/RuneDefenders-Prefix.pch";
+				INFOPLIST_FILE = "RuneDefenders/RuneDefenders-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SPRITEKIT_TEXTURE_ATLAS_OUTPUT = YES;
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		BEF0F3ED18F3F4220056806B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/RuneDefenders.app/RuneDefenders";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "RuneDefenders/RuneDefenders-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "RuneDefendersTests/RuneDefendersTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Debug;
+		};
+		BEF0F3EE18F3F4220056806B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/RuneDefenders.app/RuneDefenders";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "RuneDefenders/RuneDefenders-Prefix.pch";
+				INFOPLIST_FILE = "RuneDefendersTests/RuneDefendersTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		BEF0F3AB18F3F4210056806B /* Build configuration list for PBXProject "RuneDefenders" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BEF0F3E718F3F4220056806B /* Debug */,
+				BEF0F3E818F3F4220056806B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		BEF0F3E918F3F4220056806B /* Build configuration list for PBXNativeTarget "RuneDefenders" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BEF0F3EA18F3F4220056806B /* Debug */,
+				BEF0F3EB18F3F4220056806B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		BEF0F3EC18F3F4220056806B /* Build configuration list for PBXNativeTarget "RuneDefendersTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BEF0F3ED18F3F4220056806B /* Debug */,
+				BEF0F3EE18F3F4220056806B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = BEF0F3A818F3F4210056806B /* Project object */;
+}
