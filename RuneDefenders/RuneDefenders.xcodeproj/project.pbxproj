@@ -11,6 +11,8 @@
 		BEEACDF018F5127F0011D7C6 /* tex_bg_1.atlas in Resources */ = {isa = PBXBuildFile; fileRef = BEEACDED18F5127F0011D7C6 /* tex_bg_1.atlas */; };
 		BEEACDF118F5127F0011D7C6 /* tex_fonts.atlas in Resources */ = {isa = PBXBuildFile; fileRef = BEEACDEE18F5127F0011D7C6 /* tex_fonts.atlas */; };
 		BEEACDF218F5127F0011D7C6 /* tex_ingame.atlas in Resources */ = {isa = PBXBuildFile; fileRef = BEEACDEF18F5127F0011D7C6 /* tex_ingame.atlas */; };
+		BEEACDF718F5149A0011D7C6 /* RDHomeScene.m in Sources */ = {isa = PBXBuildFile; fileRef = BEEACDF618F5149A0011D7C6 /* RDHomeScene.m */; };
+		BEEACDFC18F515A70011D7C6 /* home@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = BEEACDFB18F515A70011D7C6 /* home@2x.png */; };
 		BEF0F3B418F3F4210056806B /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BEF0F3B318F3F4210056806B /* Foundation.framework */; };
 		BEF0F3B618F3F4210056806B /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BEF0F3B518F3F4210056806B /* CoreGraphics.framework */; };
 		BEF0F3B818F3F4210056806B /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BEF0F3B718F3F4210056806B /* UIKit.framework */; };
@@ -46,6 +48,9 @@
 		BEEACDED18F5127F0011D7C6 /* tex_bg_1.atlas */ = {isa = PBXFileReference; lastKnownFileType = folder.skatlas; name = tex_bg_1.atlas; path = image/tex_bg_1.atlas; sourceTree = "<group>"; };
 		BEEACDEE18F5127F0011D7C6 /* tex_fonts.atlas */ = {isa = PBXFileReference; lastKnownFileType = folder.skatlas; name = tex_fonts.atlas; path = image/tex_fonts.atlas; sourceTree = "<group>"; };
 		BEEACDEF18F5127F0011D7C6 /* tex_ingame.atlas */ = {isa = PBXFileReference; lastKnownFileType = folder.skatlas; name = tex_ingame.atlas; path = image/tex_ingame.atlas; sourceTree = "<group>"; };
+		BEEACDF518F5149A0011D7C6 /* RDHomeScene.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = RDHomeScene.h; path = RuneDefenders/Source/Scene/RDHomeScene.h; sourceTree = SOURCE_ROOT; };
+		BEEACDF618F5149A0011D7C6 /* RDHomeScene.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = RDHomeScene.m; path = RuneDefenders/Source/Scene/RDHomeScene.m; sourceTree = SOURCE_ROOT; };
+		BEEACDFB18F515A70011D7C6 /* home@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "home@2x.png"; path = "Image/normal/home@2x.png"; sourceTree = "<group>"; };
 		BEF0F3B018F3F4210056806B /* RuneDefenders.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RuneDefenders.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BEF0F3B318F3F4210056806B /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		BEF0F3B518F3F4210056806B /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -96,11 +101,13 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		BEEACDE318F4E5220011D7C6 /* source */ = {
+		BEEACDE318F4E5220011D7C6 /* Source */ = {
 			isa = PBXGroup;
 			children = (
+				BEEACDF418F514830011D7C6 /* Scene */,
 				BEEACDE418F4F1130011D7C6 /* SpriteDef */,
 			);
+			name = Source;
 			path = source;
 			sourceTree = "<group>";
 		};
@@ -116,11 +123,29 @@
 		BEEACDEC18F511290011D7C6 /* Image */ = {
 			isa = PBXGroup;
 			children = (
+				BEEACDF818F515790011D7C6 /* normal */,
 				BEEACDED18F5127F0011D7C6 /* tex_bg_1.atlas */,
 				BEEACDEE18F5127F0011D7C6 /* tex_fonts.atlas */,
 				BEEACDEF18F5127F0011D7C6 /* tex_ingame.atlas */,
 			);
 			name = Image;
+			sourceTree = "<group>";
+		};
+		BEEACDF418F514830011D7C6 /* Scene */ = {
+			isa = PBXGroup;
+			children = (
+				BEEACDF518F5149A0011D7C6 /* RDHomeScene.h */,
+				BEEACDF618F5149A0011D7C6 /* RDHomeScene.m */,
+			);
+			name = Scene;
+			sourceTree = "<group>";
+		};
+		BEEACDF818F515790011D7C6 /* normal */ = {
+			isa = PBXGroup;
+			children = (
+				BEEACDFB18F515A70011D7C6 /* home@2x.png */,
+			);
+			name = normal;
 			sourceTree = "<group>";
 		};
 		BEF0F3A718F3F4210056806B = {
@@ -166,7 +191,7 @@
 				BEF0F3CE18F3F4210056806B /* RDMyScene.m */,
 				BEF0F3D018F3F4210056806B /* Spaceship.png */,
 				BEF0F3D218F3F4210056806B /* Images.xcassets */,
-				BEEACDE318F4E5220011D7C6 /* source */,
+				BEEACDE318F4E5220011D7C6 /* Source */,
 				BEEACDEC18F511290011D7C6 /* Image */,
 				BEF0F3BC18F3F4210056806B /* Supporting Files */,
 			);
@@ -280,6 +305,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				BEF0F3C018F3F4210056806B /* InfoPlist.strings in Resources */,
+				BEEACDFC18F515A70011D7C6 /* home@2x.png in Resources */,
 				BEF0F3D318F3F4210056806B /* Images.xcassets in Resources */,
 				BEEACDF118F5127F0011D7C6 /* tex_fonts.atlas in Resources */,
 				BEEACDF018F5127F0011D7C6 /* tex_bg_1.atlas in Resources */,
@@ -305,6 +331,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				BEF0F3CF18F3F4210056806B /* RDMyScene.m in Sources */,
+				BEEACDF718F5149A0011D7C6 /* RDHomeScene.m in Sources */,
 				BEF0F3C618F3F4210056806B /* RDAppDelegate.m in Sources */,
 				BEEACDEB18F4F7D50011D7C6 /* SpriteDef.cpp in Sources */,
 				BEF0F3C218F3F4210056806B /* main.m in Sources */,
