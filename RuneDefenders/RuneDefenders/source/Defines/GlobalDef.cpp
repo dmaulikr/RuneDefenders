@@ -7,3 +7,7 @@
 //
 
 #include "GlobalDef.h"
+
+CGFloat gWorldScale = 0;
+CGFloat gDeviceWidth = 0;
+CGFloat gDeviceHeight = 0;

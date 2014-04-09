@@ -7,6 +7,9 @@
 //
 
 #import "RDHomeScene.h"
+#import "SpriteDef.h"
+#import "GlobalDef.h"
+#import "RDHomeSceneDefs.h"
 
 @implementation RDHomeScene
 
@@ -14,36 +17,68 @@
     if (self = [super initWithSize:size]) {
         /* Setup your scene here */
         
-        self.backgroundColor = [SKColor colorWithRed:0.15 green:0.15 blue:0.3 alpha:1.0];
+        NSLog(@"width:%f height:%f", size.width, size.height);
         
-        SKLabelNode *myLabel = [SKLabelNode labelNodeWithFontNamed:@"Chalkduster"];
+        // background
+        SKSpriteNode* home = [SKSpriteNode spriteNodeWithImageNamed:@HOME];
+        home.position = CGPointMake(size.width/2, size.height/2);
+        [self addChild:home];
+        //NSLog(@"width:%f height:%f", home.size.width, home.size.height);
         
-        myLabel.text = @"Hello, World!";
-        myLabel.fontSize = 30;
-        myLabel.position = CGPointMake(CGRectGetMidX(self.frame),
-                                       CGRectGetMidY(self.frame));
+        // set gWorldScale
+        gWorldScale = size.height/home.size.height;
+        NSLog(@"gWorldScale = %f", gWorldScale);
+        [home setScale:gWorldScale];
         
-        [self addChild:myLabel];
+        // logo
+        SKSpriteNode* logo = [SKSpriteNode spriteNodeWithImageNamed:@LOGO];
+        logo.position = LOGO_POSITION;
+        [logo setScale:gWorldScale];
+        [self addChild:logo];
+        
+        [self addMoreGames];
+        [self addPlayHand];
     }
     return self;
 }
 
+- (void)addMoreGames
+{
+    // more games
+    SKSpriteNode* moreGame = [SKSpriteNode spriteNodeWithImageNamed:@MORE_GAME];
+    moreGame.position = MORE_GAME_POSITION;
+    [moreGame setScale:0];
+    [self addChild:moreGame];
+    
+    // more games action
+    CGFloat moreGameActionDuration = 0.2;
+    CGFloat moreGameMinScale = gWorldScale * 0.8;
+    SKAction* act0 = [SKAction waitForDuration:MORE_GAME_WAIT_DURATION];
+    SKAction* act1 = [SKAction scaleTo:gWorldScale duration:moreGameActionDuration];
+    SKAction* act2 = [SKAction scaleTo:moreGameMinScale duration:moreGameActionDuration];
+    SKAction* act3 = [SKAction sequence:@[act2, act1]];
+    SKAction* act4 = [SKAction repeatAction:act3 count:5];
+    SKAction* act5 = [SKAction sequence:@[act0, act1, act4]];
+    [moreGame runAction:act5];
+}
+
+- (void)addPlayHand
+{
+    // play hand
+    SKSpriteNode* playHand = [SKSpriteNode spriteNodeWithImageNamed:@PLAY_HAND];
+    playHand.position = PLAY_HAND_START_POSITION;
+    [playHand setScale:gWorldScale];
+    [self addChild:playHand];
+    
+    // play hand action
+    SKAction* act0 = [SKAction waitForDuration:PLAY_HAND_WAIT_DURATION];
+    SKAction* act1 = [SKAction moveTo:PLAY_HAND_TARGET_POSITION duration:0.25];
+    SKAction* act2 = [SKAction sequence:@[act0, act1]];
+    [playHand runAction:act2];
+}
+
 -(void)touchesBegan:(NSSet *)touches withEvent:(UIEvent *)event {
     /* Called when a touch begins */
-    
-    for (UITouch *touch in touches) {
-        CGPoint location = [touch locationInNode:self];
-        
-        SKSpriteNode *sprite = [SKSpriteNode spriteNodeWithImageNamed:@"Spaceship"];
-        
-        sprite.position = location;
-        
-        SKAction *action = [SKAction rotateByAngle:M_PI duration:1];
-        
-        [sprite runAction:[SKAction repeatActionForever:action]];
-        
-        [self addChild:sprite];
-    }
 }
 
 -(void)update:(CFTimeInterval)currentTime {

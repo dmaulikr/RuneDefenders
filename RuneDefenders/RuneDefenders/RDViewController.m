@@ -8,12 +8,18 @@
 
 #import "RDViewController.h"
 #import "RDHomeScene.h"
+#import "GlobalDef.h"
 
 @implementation RDViewController
 
 - (void)viewDidLoad
 {
     [super viewDidLoad];
+    
+    // Startup Configuration
+    gDeviceWidth = self.view.bounds.size.width;
+    gDeviceHeight = self.view.bounds.size.height;
+    [[UIApplication sharedApplication] setStatusBarHidden:YES];
 
     // Configure the view.
     SKView * skView = (SKView *)self.view;

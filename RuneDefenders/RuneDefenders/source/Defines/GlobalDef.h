@@ -9,6 +9,8 @@
 #ifndef __RuneDefenders__GlobalDef__
 #define __RuneDefenders__GlobalDef__
 
-#include <iostream>
+extern CGFloat gWorldScale;
+extern CGFloat gDeviceWidth;
+extern CGFloat gDeviceHeight;
 
 #endif /* defined(__RuneDefenders__GlobalDef__) */

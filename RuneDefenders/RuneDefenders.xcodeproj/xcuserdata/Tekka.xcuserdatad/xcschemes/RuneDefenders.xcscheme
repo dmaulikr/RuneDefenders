@@ -13,6 +13,15 @@
       buildConfiguration = "Debug">
       <Testables>
       </Testables>
+      <MacroExpansion>
+         <BuildableReference
+            BuildableIdentifier = "primary"
+            BlueprintIdentifier = "BEF0F3AF18F3F4210056806B"
+            BuildableName = "RuneDefenders.app"
+            BlueprintName = "RuneDefenders"
+            ReferencedContainer = "container:RuneDefenders.xcodeproj">
+         </BuildableReference>
+      </MacroExpansion>
    </TestAction>
    <LaunchAction
       selectedDebuggerIdentifier = "Xcode.DebuggerFoundation.Debugger.LLDB"
@@ -23,6 +32,15 @@
       ignoresPersistentStateOnLaunch = "NO"
       debugDocumentVersioning = "YES"
       allowLocationSimulation = "YES">
+      <BuildableProductRunnable>
+         <BuildableReference
+            BuildableIdentifier = "primary"
+            BlueprintIdentifier = "BEF0F3AF18F3F4210056806B"
+            BuildableName = "RuneDefenders.app"
+            BlueprintName = "RuneDefenders"
+            ReferencedContainer = "container:RuneDefenders.xcodeproj">
+         </BuildableReference>
+      </BuildableProductRunnable>
       <AdditionalOptions>
       </AdditionalOptions>
    </LaunchAction>

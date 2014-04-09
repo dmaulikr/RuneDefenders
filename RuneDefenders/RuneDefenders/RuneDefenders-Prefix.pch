@@ -13,6 +13,7 @@
 #ifdef __OBJC__
     #import <UIKit/UIKit.h>
     #import <Foundation/Foundation.h>
+    #import <SpriteKit/SpriteKit.h>
 #endif
 
 #include <CoreGraphics/CoreGraphics.h>
