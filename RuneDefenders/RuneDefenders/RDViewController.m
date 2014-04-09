@@ -7,7 +7,7 @@
 //
 
 #import "RDViewController.h"
-#import "RDMyScene.h"
+#import "RDHomeScene.h"
 
 @implementation RDViewController
 
@@ -21,7 +21,7 @@
     skView.showsNodeCount = YES;
     
     // Create and configure the scene.
-    SKScene * scene = [RDMyScene sceneWithSize:skView.bounds.size];
+    SKScene * scene = [RDHomeScene sceneWithSize:skView.bounds.size];
     scene.scaleMode = SKSceneScaleModeAspectFill;
     
     // Present the scene.

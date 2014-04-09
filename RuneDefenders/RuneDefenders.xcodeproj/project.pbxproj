@@ -22,7 +22,6 @@
 		BEF0F3C618F3F4210056806B /* RDAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = BEF0F3C518F3F4210056806B /* RDAppDelegate.m */; };
 		BEF0F3C918F3F4210056806B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BEF0F3C718F3F4210056806B /* Main.storyboard */; };
 		BEF0F3CC18F3F4210056806B /* RDViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BEF0F3CB18F3F4210056806B /* RDViewController.m */; };
-		BEF0F3CF18F3F4210056806B /* RDMyScene.m in Sources */ = {isa = PBXBuildFile; fileRef = BEF0F3CE18F3F4210056806B /* RDMyScene.m */; };
 		BEF0F3D118F3F4210056806B /* Spaceship.png in Resources */ = {isa = PBXBuildFile; fileRef = BEF0F3D018F3F4210056806B /* Spaceship.png */; };
 		BEF0F3D318F3F4210056806B /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BEF0F3D218F3F4210056806B /* Images.xcassets */; };
 		BEF0F3DA18F3F4210056806B /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BEF0F3D918F3F4210056806B /* XCTest.framework */; };
@@ -65,8 +64,6 @@
 		BEF0F3C818F3F4210056806B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		BEF0F3CA18F3F4210056806B /* RDViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RDViewController.h; sourceTree = "<group>"; };
 		BEF0F3CB18F3F4210056806B /* RDViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RDViewController.m; sourceTree = "<group>"; };
-		BEF0F3CD18F3F4210056806B /* RDMyScene.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RDMyScene.h; sourceTree = "<group>"; };
-		BEF0F3CE18F3F4210056806B /* RDMyScene.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RDMyScene.m; sourceTree = "<group>"; };
 		BEF0F3D018F3F4210056806B /* Spaceship.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Spaceship.png; sourceTree = "<group>"; };
 		BEF0F3D218F3F4210056806B /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		BEF0F3D818F3F4210056806B /* RuneDefendersTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RuneDefendersTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -187,8 +184,6 @@
 				BEF0F3C718F3F4210056806B /* Main.storyboard */,
 				BEF0F3CA18F3F4210056806B /* RDViewController.h */,
 				BEF0F3CB18F3F4210056806B /* RDViewController.m */,
-				BEF0F3CD18F3F4210056806B /* RDMyScene.h */,
-				BEF0F3CE18F3F4210056806B /* RDMyScene.m */,
 				BEF0F3D018F3F4210056806B /* Spaceship.png */,
 				BEF0F3D218F3F4210056806B /* Images.xcassets */,
 				BEEACDE318F4E5220011D7C6 /* Source */,
@@ -330,7 +325,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				BEF0F3CF18F3F4210056806B /* RDMyScene.m in Sources */,
 				BEEACDF718F5149A0011D7C6 /* RDHomeScene.m in Sources */,
 				BEF0F3C618F3F4210056806B /* RDAppDelegate.m in Sources */,
 				BEEACDEB18F4F7D50011D7C6 /* SpriteDef.cpp in Sources */,
