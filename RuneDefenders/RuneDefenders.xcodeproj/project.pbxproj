@@ -22,6 +22,7 @@
 		BE48190318F566B5007CE091 /* white_halo@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = BE48190018F566B5007CE091 /* white_halo@2x.png */; };
 		BE48190618F56DB7007CE091 /* SpriteDef.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BE48190418F56DB7007CE091 /* SpriteDef.cpp */; };
 		BE48190918F56DD2007CE091 /* GlobalDef.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BE48190718F56DD2007CE091 /* GlobalDef.cpp */; };
+		BE54B0B518F6DA4E005D5EF5 /* RDSettingPanel.m in Sources */ = {isa = PBXBuildFile; fileRef = BE54B0B418F6DA4E005D5EF5 /* RDSettingPanel.m */; };
 		BEEACDF718F5149A0011D7C6 /* RDHomeScene.m in Sources */ = {isa = PBXBuildFile; fileRef = BEEACDF618F5149A0011D7C6 /* RDHomeScene.m */; };
 		BEF0F3B418F3F4210056806B /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BEF0F3B318F3F4210056806B /* Foundation.framework */; };
 		BEF0F3B618F3F4210056806B /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BEF0F3B518F3F4210056806B /* CoreGraphics.framework */; };
@@ -69,6 +70,8 @@
 		BE48190718F56DD2007CE091 /* GlobalDef.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = GlobalDef.cpp; path = RuneDefenders/Source/Defines/GlobalDef.cpp; sourceTree = SOURCE_ROOT; };
 		BE48190818F56DD2007CE091 /* GlobalDef.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = GlobalDef.h; path = RuneDefenders/Source/Defines/GlobalDef.h; sourceTree = SOURCE_ROOT; };
 		BE48190A18F56F46007CE091 /* RDHomeSceneDefs.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = RDHomeSceneDefs.h; path = RuneDefenders/Source/Scene/RDHomeSceneDefs.h; sourceTree = SOURCE_ROOT; };
+		BE54B0B318F6DA4E005D5EF5 /* RDSettingPanel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = RDSettingPanel.h; path = RuneDefenders/Source/Scene/RDSettingPanel.h; sourceTree = SOURCE_ROOT; };
+		BE54B0B418F6DA4E005D5EF5 /* RDSettingPanel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = RDSettingPanel.m; path = RuneDefenders/Source/Scene/RDSettingPanel.m; sourceTree = SOURCE_ROOT; };
 		BEEACDF518F5149A0011D7C6 /* RDHomeScene.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = RDHomeScene.h; path = RuneDefenders/Source/Scene/RDHomeScene.h; sourceTree = SOURCE_ROOT; };
 		BEEACDF618F5149A0011D7C6 /* RDHomeScene.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = RDHomeScene.m; path = RuneDefenders/Source/Scene/RDHomeScene.m; sourceTree = SOURCE_ROOT; };
 		BEF0F3B018F3F4210056806B /* RuneDefenders.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RuneDefenders.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -189,6 +192,8 @@
 				BEEACDF518F5149A0011D7C6 /* RDHomeScene.h */,
 				BEEACDF618F5149A0011D7C6 /* RDHomeScene.m */,
 				BE48190A18F56F46007CE091 /* RDHomeSceneDefs.h */,
+				BE54B0B318F6DA4E005D5EF5 /* RDSettingPanel.h */,
+				BE54B0B418F6DA4E005D5EF5 /* RDSettingPanel.m */,
 			);
 			name = Scene;
 			sourceTree = "<group>";
@@ -380,6 +385,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BE54B0B518F6DA4E005D5EF5 /* RDSettingPanel.m in Sources */,
 				BE48190918F56DD2007CE091 /* GlobalDef.cpp in Sources */,
 				BEEACDF718F5149A0011D7C6 /* RDHomeScene.m in Sources */,
 				BEF0F3C618F3F4210056806B /* RDAppDelegate.m in Sources */,

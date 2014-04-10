@@ -87,16 +87,16 @@
     [self addChild:whiteHalo];
     
     // play hand
-    SKSpriteNode* playHand = [SKSpriteNode spriteNodeWithImageNamed:@PLAY_HAND];
-    playHand.position = PLAY_HAND_START_POSITION;
-    [playHand setScale:gWorldScale];
-    [self addChild:playHand];
+    self.playHand = [SKSpriteNode spriteNodeWithImageNamed:@PLAY_HAND];
+    _playHand.position = PLAY_HAND_START_POSITION;
+    [_playHand setScale:gWorldScale];
+    [self addChild:_playHand];
     
     // play hand action
     SKAction* act0 = [SKAction waitForDuration:PLAY_HAND_WAIT_DURATION];
-    SKAction* act1 = [SKAction moveTo:PLAY_HAND_TARGET_POSITION duration:0.25];
+    SKAction* act1 = [SKAction moveTo:PLAY_HAND_TARGET_POSITION duration:0.3];
     SKAction* act2 = [SKAction sequence:@[act0, act1]];
-    [playHand runAction:act2 completion:^(){
+    [_playHand runAction:act2 completion:^(){
         whiteHalo.hidden = NO;
         SKAction* act1 = [SKAction rotateByAngle:-3.14 duration:3.5];
         SKAction* act2 = [SKAction repeatActionForever:act1];
@@ -109,15 +109,13 @@
     SKSpriteNode* facebook = [SKSpriteNode spriteNodeWithImageNamed:@FACEBOOK];
     facebook.position = FACEBOOK_POSITION;
     facebook.zRotation = PI/3;
-    facebook.hidden = YES;
+    facebook.alpha = 0;
     [facebook setScale:gWorldScale];
     [self addChild:facebook];
     
     SKAction* act0 = [SKAction waitForDuration:1.8];
-    SKAction* act1 = [SKAction runBlock:^(){
-        facebook.hidden = NO;
-    }];
-    SKAction* act2 = [SKAction rotateToAngle:0 duration:0.5];
+    SKAction* act1 = [SKAction rotateToAngle:0 duration:0.7];
+    SKAction* act2 = [SKAction fadeInWithDuration:0.4];
     SKAction* act3 = [SKAction group:@[act1, act2]];
     SKAction* act4 = [SKAction sequence:@[act0, act3]];
     [facebook runAction:act4];
@@ -125,24 +123,47 @@
 
 - (void)addSetting
 {
-    SKSpriteNode* setting = [SKSpriteNode spriteNodeWithImageNamed:@SETTING];
-    setting.position = SETTING_POSITION;
-    setting.zRotation = -PI/3;
-    [setting setScale:gWorldScale];
-    [self addChild:setting];
+    self.setting = [SKSpriteNode spriteNodeWithImageNamed:@SETTING];
+    _setting.position = SETTING_POSITION;
+    _setting.zRotation = -PI/3;
+    _setting.alpha = 0;
+    [_setting setScale:gWorldScale];
+    [self addChild:_setting];
     
     SKAction* act0 = [SKAction waitForDuration:1.8];
-    SKAction* act1 = [SKAction runBlock:^(){
-        setting.hidden = NO;
-    }];
-    SKAction* act2 = [SKAction rotateToAngle:0 duration:0.5];
+    SKAction* act1 = [SKAction rotateToAngle:0 duration:0.7];
+    SKAction* act2 = [SKAction fadeInWithDuration:0.4];
     SKAction* act3 = [SKAction group:@[act1, act2]];
     SKAction* act4 = [SKAction sequence:@[act0, act3]];
-    [setting runAction:act4];
+    [_setting runAction:act4];
 }
 
 -(void)touchesBegan:(NSSet *)touches withEvent:(UIEvent *)event {
     /* Called when a touch begins */
+    UITouch *touch = [touches anyObject];
+    CGPoint location = [touch locationInNode:self];
+    if ([self nodeAtPoint:location] == _setting){
+        [self showSettingPanel];
+    }
+    else if ([self nodeAtPoint:location] == _playHand){
+        
+    }
+}
+
+- (void)showSettingPanel
+{
+    if (_settingPanel == NULL)
+    {
+        self.settingPanel = [RDSettingPanel spriteNodeWithImageNamed:@ROCK_PANEL];
+        _settingPanel.position = CGPointMake(self.size.width/2, self.size.height/2);
+        [_settingPanel setScale:gWorldScale];
+        [self addChild:_settingPanel];
+    }
+    [_settingPanel setScale:0.2];
+    SKAction* act1 = [SKAction scaleTo:1.2*gWorldScale duration:0.3];
+    SKAction* act2 = [SKAction scaleTo:1.0*gWorldScale duration:0.1];
+    SKAction* act3 = [SKAction sequence:@[act1, act2]];
+    [_settingPanel runAction:act3];
 }
 
 -(void)update:(CFTimeInterval)currentTime {
