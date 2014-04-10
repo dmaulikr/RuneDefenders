@@ -18,4 +18,8 @@
 #define PLAY_HAND_TARGET_POSITION CGPointMake(160, 99*gWorldScale)
 #define PLAY_HAND_WAIT_DURATION 1.3f
 
+#define WHITE_HALO_POSITION CGPointMake(107, 128*gWorldScale)
+#define FACEBOOK_POSITION CGPointMake(20, 20)
+#define SETTING_POSITION CGPointMake(295, 28)
+
 #endif

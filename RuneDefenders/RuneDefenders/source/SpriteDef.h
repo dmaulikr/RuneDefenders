@@ -21,7 +21,7 @@
 #define FACEBOOK    "facebook.png"
 #define NO_BTN  "no.png"
 #define SCROLL_GEAR "scroll_gear.png"
-#define SETTIGN "setting.png"
+#define SETTING "setting.png"
 #define YES_BTN "yes.png"
 
 // tex_ingame

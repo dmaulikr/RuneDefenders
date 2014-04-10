@@ -38,6 +38,8 @@
         
         [self addMoreGames];
         [self addPlayHand];
+        [self addFacebook];
+        [self addSetting];
     }
     return self;
 }
@@ -64,6 +66,12 @@
 
 - (void)addPlayHand
 {
+    // white halo
+    SKSpriteNode* whiteHalo = [SKSpriteNode spriteNodeWithImageNamed:@WHITE_HALO];
+    whiteHalo.position = WHITE_HALO_POSITION;
+    whiteHalo.hidden = YES;
+    [self addChild:whiteHalo];
+    
     // play hand
     SKSpriteNode* playHand = [SKSpriteNode spriteNodeWithImageNamed:@PLAY_HAND];
     playHand.position = PLAY_HAND_START_POSITION;
@@ -74,7 +82,28 @@
     SKAction* act0 = [SKAction waitForDuration:PLAY_HAND_WAIT_DURATION];
     SKAction* act1 = [SKAction moveTo:PLAY_HAND_TARGET_POSITION duration:0.25];
     SKAction* act2 = [SKAction sequence:@[act0, act1]];
-    [playHand runAction:act2];
+    [playHand runAction:act2 completion:^(){
+        whiteHalo.hidden = NO;
+        SKAction* act1 = [SKAction rotateByAngle:-3.14 duration:3.5];
+        SKAction* act2 = [SKAction repeatActionForever:act1];
+        [whiteHalo runAction:act2];
+    }];
+}
+
+- (void)addFacebook
+{
+    SKSpriteNode* facebook = [SKSpriteNode spriteNodeWithImageNamed:@FACEBOOK];
+    facebook.position = FACEBOOK_POSITION;
+    [facebook setScale:gWorldScale];
+    [self addChild:facebook];
+}
+
+- (void)addSetting
+{
+    SKSpriteNode* setting = [SKSpriteNode spriteNodeWithImageNamed:@SETTING];
+    setting.position = SETTING_POSITION;
+    [setting setScale:gWorldScale];
+    [self addChild:setting];
 }
 
 -(void)touchesBegan:(NSSet *)touches withEvent:(UIEvent *)event {
