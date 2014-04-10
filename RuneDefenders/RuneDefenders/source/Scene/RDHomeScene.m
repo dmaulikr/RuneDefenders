@@ -160,8 +160,8 @@
         [self addChild:_settingPanel];
     }
     [_settingPanel setScale:0.2];
-    SKAction* act1 = [SKAction scaleTo:1.2*gWorldScale duration:0.3];
-    SKAction* act2 = [SKAction scaleTo:1.0*gWorldScale duration:0.1];
+    SKAction* act1 = [SKAction scaleTo:1.15*gWorldScale duration:0.3];
+    SKAction* act2 = [SKAction scaleTo:1.0*gWorldScale duration:0.15];
     SKAction* act3 = [SKAction sequence:@[act1, act2]];
     [_settingPanel runAction:act3];
 }
