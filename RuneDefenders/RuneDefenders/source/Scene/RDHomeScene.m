@@ -94,16 +94,37 @@
 {
     SKSpriteNode* facebook = [SKSpriteNode spriteNodeWithImageNamed:@FACEBOOK];
     facebook.position = FACEBOOK_POSITION;
+    facebook.zRotation = PI/3;
+    facebook.hidden = YES;
     [facebook setScale:gWorldScale];
     [self addChild:facebook];
+    
+    SKAction* act0 = [SKAction waitForDuration:1.8];
+    SKAction* act1 = [SKAction runBlock:^(){
+        facebook.hidden = NO;
+    }];
+    SKAction* act2 = [SKAction rotateToAngle:0 duration:0.5];
+    SKAction* act3 = [SKAction group:@[act1, act2]];
+    SKAction* act4 = [SKAction sequence:@[act0, act3]];
+    [facebook runAction:act4];
 }
 
 - (void)addSetting
 {
     SKSpriteNode* setting = [SKSpriteNode spriteNodeWithImageNamed:@SETTING];
     setting.position = SETTING_POSITION;
+    setting.zRotation = -PI/3;
     [setting setScale:gWorldScale];
     [self addChild:setting];
+    
+    SKAction* act0 = [SKAction waitForDuration:1.8];
+    SKAction* act1 = [SKAction runBlock:^(){
+        setting.hidden = NO;
+    }];
+    SKAction* act2 = [SKAction rotateToAngle:0 duration:0.5];
+    SKAction* act3 = [SKAction group:@[act1, act2]];
+    SKAction* act4 = [SKAction sequence:@[act0, act3]];
+    [setting runAction:act4];
 }
 
 -(void)touchesBegan:(NSSet *)touches withEvent:(UIEvent *)event {

@@ -12,5 +12,6 @@
 extern CGFloat gWorldScale;
 extern CGFloat gDeviceWidth;
 extern CGFloat gDeviceHeight;
+extern CGFloat PI;
 
 #endif /* defined(__RuneDefenders__GlobalDef__) */

@@ -11,3 +11,4 @@
 CGFloat gWorldScale = 0;
 CGFloat gDeviceWidth = 0;
 CGFloat gDeviceHeight = 0;
+CGFloat PI = 3.14;
