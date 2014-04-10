@@ -22,4 +22,7 @@
 #define FACEBOOK_POSITION CGPointMake(20, 20)
 #define SETTING_POSITION CGPointMake(295, 28)
 
+#define LEFT_EYEBALL_POSITION CGPointMake(120, 246)
+#define RIGHT_EYEBALL_POSITION CGPointMake(144, 246)
+
 #endif

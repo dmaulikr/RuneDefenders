@@ -10,4 +10,7 @@
 
 @interface RDHomeScene : SKScene
 
+@property(nonatomic, strong) SKSpriteNode* leftEyeBall;
+@property(nonatomic, strong) SKSpriteNode* rightEyeBall;
+
 @end

@@ -36,12 +36,26 @@
         [logo setScale:gWorldScale];
         [self addChild:logo];
         
+        [self addEyeBall];
         [self addMoreGames];
         [self addPlayHand];
         [self addFacebook];
         [self addSetting];
     }
     return self;
+}
+
+- (void)addEyeBall
+{
+    self.leftEyeBall = [SKSpriteNode spriteNodeWithImageNamed:@EYEBALL];
+    [_leftEyeBall setScale:gWorldScale];
+    _leftEyeBall.position = LEFT_EYEBALL_POSITION;
+    [self addChild:_leftEyeBall];
+    
+    self.rightEyeBall = [SKSpriteNode spriteNodeWithImageNamed:@EYEBALL];
+    [_rightEyeBall setScale:gWorldScale];
+    _rightEyeBall.position = RIGHT_EYEBALL_POSITION;
+    [self addChild:_rightEyeBall];
 }
 
 - (void)addMoreGames
