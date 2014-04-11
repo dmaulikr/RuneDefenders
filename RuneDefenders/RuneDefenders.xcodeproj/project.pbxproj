@@ -7,7 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		BE189E6C18F784CC00E82E86 /* RDSpriteNode.m in Sources */ = {isa = PBXBuildFile; fileRef = BE189E6B18F784CC00E82E86 /* RDSpriteNode.m */; };
 		BE4802A818F789EE008E95D7 /* SpriteDef.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BE4802A618F789EE008E95D7 /* SpriteDef.cpp */; };
 		BE4818ED18F56628007CE091 /* blade_to_left@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = BE4818E818F56628007CE091 /* blade_to_left@2x.png */; };
 		BE4818EE18F56628007CE091 /* blade_to_right@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = BE4818E918F56628007CE091 /* blade_to_right@2x.png */; };
@@ -24,6 +23,7 @@
 		BE48190318F566B5007CE091 /* white_halo@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = BE48190018F566B5007CE091 /* white_halo@2x.png */; };
 		BE48190918F56DD2007CE091 /* GlobalDef.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BE48190718F56DD2007CE091 /* GlobalDef.cpp */; };
 		BE54B0B518F6DA4E005D5EF5 /* RDSettingPanel.m in Sources */ = {isa = PBXBuildFile; fileRef = BE54B0B418F6DA4E005D5EF5 /* RDSettingPanel.m */; };
+		BE7F423918F7BF79003C165B /* RDActionProtocol.m in Sources */ = {isa = PBXBuildFile; fileRef = BE7F423818F7BF79003C165B /* RDActionProtocol.m */; };
 		BEEACDF718F5149A0011D7C6 /* RDHomeScene.m in Sources */ = {isa = PBXBuildFile; fileRef = BEEACDF618F5149A0011D7C6 /* RDHomeScene.m */; };
 		BEF0F3B418F3F4210056806B /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BEF0F3B318F3F4210056806B /* Foundation.framework */; };
 		BEF0F3B618F3F4210056806B /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BEF0F3B518F3F4210056806B /* CoreGraphics.framework */; };
@@ -53,8 +53,6 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		BE189E6A18F784CC00E82E86 /* RDSpriteNode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = RDSpriteNode.h; path = RuneDefenders/Source/Common/RDSpriteNode.h; sourceTree = SOURCE_ROOT; };
-		BE189E6B18F784CC00E82E86 /* RDSpriteNode.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = RDSpriteNode.m; path = RuneDefenders/Source/Common/RDSpriteNode.m; sourceTree = SOURCE_ROOT; };
 		BE4802A618F789EE008E95D7 /* SpriteDef.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = SpriteDef.cpp; sourceTree = "<group>"; };
 		BE4802A718F789EE008E95D7 /* SpriteDef.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SpriteDef.h; sourceTree = "<group>"; };
 		BE4818E818F56628007CE091 /* blade_to_left@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "blade_to_left@2x.png"; path = "Image/tex_bg_1.atlas/blade_to_left@2x.png"; sourceTree = "<group>"; };
@@ -75,6 +73,8 @@
 		BE48190A18F56F46007CE091 /* RDHomeSceneDefs.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = RDHomeSceneDefs.h; path = RuneDefenders/Source/Scene/RDHomeSceneDefs.h; sourceTree = SOURCE_ROOT; };
 		BE54B0B318F6DA4E005D5EF5 /* RDSettingPanel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = RDSettingPanel.h; path = RuneDefenders/Source/Scene/RDSettingPanel.h; sourceTree = SOURCE_ROOT; };
 		BE54B0B418F6DA4E005D5EF5 /* RDSettingPanel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = RDSettingPanel.m; path = RuneDefenders/Source/Scene/RDSettingPanel.m; sourceTree = SOURCE_ROOT; };
+		BE7F423718F7BF79003C165B /* RDActionProtocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = RDActionProtocol.h; path = RuneDefenders/Source/Common/RDActionProtocol.h; sourceTree = SOURCE_ROOT; };
+		BE7F423818F7BF79003C165B /* RDActionProtocol.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = RDActionProtocol.m; path = RuneDefenders/Source/Common/RDActionProtocol.m; sourceTree = SOURCE_ROOT; };
 		BEEACDF518F5149A0011D7C6 /* RDHomeScene.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = RDHomeScene.h; path = RuneDefenders/Source/Scene/RDHomeScene.h; sourceTree = SOURCE_ROOT; };
 		BEEACDF618F5149A0011D7C6 /* RDHomeScene.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = RDHomeScene.m; path = RuneDefenders/Source/Scene/RDHomeScene.m; sourceTree = SOURCE_ROOT; };
 		BEF0F3B018F3F4210056806B /* RuneDefenders.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RuneDefenders.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -127,8 +127,8 @@
 		BE189E6918F784B200E82E86 /* Common */ = {
 			isa = PBXGroup;
 			children = (
-				BE189E6A18F784CC00E82E86 /* RDSpriteNode.h */,
-				BE189E6B18F784CC00E82E86 /* RDSpriteNode.m */,
+				BE7F423718F7BF79003C165B /* RDActionProtocol.h */,
+				BE7F423818F7BF79003C165B /* RDActionProtocol.m */,
 			);
 			name = Common;
 			sourceTree = "<group>";
@@ -403,8 +403,8 @@
 				BEEACDF718F5149A0011D7C6 /* RDHomeScene.m in Sources */,
 				BEF0F3C618F3F4210056806B /* RDAppDelegate.m in Sources */,
 				BE4802A818F789EE008E95D7 /* SpriteDef.cpp in Sources */,
-				BE189E6C18F784CC00E82E86 /* RDSpriteNode.m in Sources */,
 				BEF0F3C218F3F4210056806B /* main.m in Sources */,
+				BE7F423918F7BF79003C165B /* RDActionProtocol.m in Sources */,
 				BEF0F3CC18F3F4210056806B /* RDViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

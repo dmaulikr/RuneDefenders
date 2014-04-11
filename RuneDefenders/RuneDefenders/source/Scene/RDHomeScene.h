@@ -8,7 +8,7 @@
 
 #import <SpriteKit/SpriteKit.h>
 #import "RDSettingPanel.h"
-#import "RDSpriteNode.h"
+#import "RDActionProtocol.h"
 
 @interface RDHomeScene : SKScene <RDActionProtocol>
 
