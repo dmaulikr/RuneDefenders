@@ -9,6 +9,8 @@
 #import <SpriteKit/SpriteKit.h>
 #import "RDActionProtocol.h"
 
-@interface RDSettingPanel : SKSpriteNode <RDActionProtocol>
+@interface RDSettingPanel : SKNode <RDActionProtocol>
+
+@property (nonatomic, retain) SKSpriteNode* panel;
 
 @end

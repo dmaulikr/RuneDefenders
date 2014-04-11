@@ -45,22 +45,6 @@
     return self;
 }
 
-- (void)showBlackMask
-{
-    if (_blackMask == NULL)
-    {
-        _blackMask = [RDSpriteNode spriteNodeWithColor:[UIColor blackColor] size:self.size];
-        _blackMask.name = @"blackMask";
-        _blackMask.position = CGPointMake(self.size.width/2, self.size.height/2);
-        _blackMask.alpha = 0;
-        _blackMask.userInteractionEnabled = YES;
-        [self addChild:_blackMask];
-    }
-    SKAction* act1 = [SKAction fadeAlphaTo:0.7 duration:0.2];
-    assert(_blackMask);
-    [_blackMask runAction:act1];
-}
-
 - (void)addEyeBall
 {
     self.leftEyeBall = [SKSpriteNode spriteNodeWithImageNamed:@EYEBALL];
@@ -164,19 +148,13 @@
 
 - (void)showSettingPanel
 {
-    [self showBlackMask];
     if (_settingPanel == NULL)
     {
-        self.settingPanel = [[RDSettingPanel alloc ] initWithImageNamed:@ROCK_PANEL];
+        self.settingPanel = [[RDSettingPanel alloc ] init];
         _settingPanel.position = CGPointMake(self.size.width/2, self.size.height/2);
-        [_settingPanel setScale:gWorldScale];
         [self addChild:_settingPanel];
     }
-    [_settingPanel setScale:0.2];
-    SKAction* act1 = [SKAction scaleTo:1.15*gWorldScale duration:0.3];
-    SKAction* act2 = [SKAction scaleTo:1.0*gWorldScale duration:0.15];
-    SKAction* act3 = [SKAction sequence:@[act1, act2]];
-    [_settingPanel runAction:act3];
+
 }
 
 -(void)update:(CFTimeInterval)currentTime {
