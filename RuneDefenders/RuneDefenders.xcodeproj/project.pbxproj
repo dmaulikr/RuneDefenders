@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		BE189E6C18F784CC00E82E86 /* RDSpriteNode.m in Sources */ = {isa = PBXBuildFile; fileRef = BE189E6B18F784CC00E82E86 /* RDSpriteNode.m */; };
 		BE4818ED18F56628007CE091 /* blade_to_left@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = BE4818E818F56628007CE091 /* blade_to_left@2x.png */; };
 		BE4818EE18F56628007CE091 /* blade_to_right@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = BE4818E918F56628007CE091 /* blade_to_right@2x.png */; };
 		BE4818EF18F56628007CE091 /* logo@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = BE4818EA18F56628007CE091 /* logo@2x.png */; };
@@ -52,6 +53,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		BE189E6A18F784CC00E82E86 /* RDSpriteNode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = RDSpriteNode.h; path = RuneDefenders/Source/Common/RDSpriteNode.h; sourceTree = SOURCE_ROOT; };
+		BE189E6B18F784CC00E82E86 /* RDSpriteNode.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = RDSpriteNode.m; path = RuneDefenders/Source/Common/RDSpriteNode.m; sourceTree = SOURCE_ROOT; };
 		BE4818E818F56628007CE091 /* blade_to_left@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "blade_to_left@2x.png"; path = "Image/tex_bg_1.atlas/blade_to_left@2x.png"; sourceTree = "<group>"; };
 		BE4818E918F56628007CE091 /* blade_to_right@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "blade_to_right@2x.png"; path = "Image/tex_bg_1.atlas/blade_to_right@2x.png"; sourceTree = "<group>"; };
 		BE4818EA18F56628007CE091 /* logo@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "logo@2x.png"; path = "Image/tex_bg_1.atlas/logo@2x.png"; sourceTree = "<group>"; };
@@ -121,6 +124,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		BE189E6918F784B200E82E86 /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				BE189E6A18F784CC00E82E86 /* RDSpriteNode.h */,
+				BE189E6B18F784CC00E82E86 /* RDSpriteNode.m */,
+			);
+			name = Common;
+			sourceTree = "<group>";
+		};
 		BE4818E718F56619007CE091 /* text_bg_1.atlas */ = {
 			isa = PBXGroup;
 			children = (
@@ -158,6 +170,7 @@
 		BEEACDE318F4E5220011D7C6 /* Source */ = {
 			isa = PBXGroup;
 			children = (
+				BE189E6918F784B200E82E86 /* Common */,
 				BEEACDF418F514830011D7C6 /* Scene */,
 				BEEACDE418F4F1130011D7C6 /* Defines */,
 			);
@@ -389,6 +402,7 @@
 				BE48190918F56DD2007CE091 /* GlobalDef.cpp in Sources */,
 				BEEACDF718F5149A0011D7C6 /* RDHomeScene.m in Sources */,
 				BEF0F3C618F3F4210056806B /* RDAppDelegate.m in Sources */,
+				BE189E6C18F784CC00E82E86 /* RDSpriteNode.m in Sources */,
 				BE48190618F56DB7007CE091 /* SpriteDef.cpp in Sources */,
 				BEF0F3C218F3F4210056806B /* main.m in Sources */,
 				BEF0F3CC18F3F4210056806B /* RDViewController.m in Sources */,

@@ -38,11 +38,27 @@
         
         [self addEyeBall];
         [self addMoreGames];
-        [self addPlayHand];
         [self addFacebook];
-        [self addSetting];
+        [self addSettingButton];
+        [self addPlayHand];
     }
     return self;
+}
+
+- (void)showBlackMask
+{
+    if (_blackMask == NULL)
+    {
+        _blackMask = [RDSpriteNode spriteNodeWithColor:[UIColor blackColor] size:self.size];
+        _blackMask.name = @"blackMask";
+        _blackMask.position = CGPointMake(self.size.width/2, self.size.height/2);
+        _blackMask.alpha = 0;
+        _blackMask.userInteractionEnabled = YES;
+        [self addChild:_blackMask];
+    }
+    SKAction* act1 = [SKAction fadeAlphaTo:0.5 duration:0.2];
+    assert(_blackMask);
+    [_blackMask runAction:act1];
 }
 
 - (void)addEyeBall
@@ -121,40 +137,43 @@
     [facebook runAction:act4];
 }
 
-- (void)addSetting
+- (void)addSettingButton
 {
-    self.setting = [SKSpriteNode spriteNodeWithImageNamed:@SETTING];
-    _setting.position = SETTING_POSITION;
-    _setting.zRotation = -PI/3;
-    _setting.alpha = 0;
-    [_setting setScale:gWorldScale];
-    [self addChild:_setting];
+    self.settingButton = [RDSpriteNode spriteNodeWithImageNamed:@SETTING];
+    _settingButton.position = SETTING_POSITION;
+    _settingButton.zRotation = -PI/3;
+    _settingButton.alpha = 0;
+    _settingButton.delegate = self;
+    [_settingButton setScale:gWorldScale];
+    [self addChild:_settingButton];
     
     SKAction* act0 = [SKAction waitForDuration:1.8];
     SKAction* act1 = [SKAction rotateToAngle:0 duration:0.7];
     SKAction* act2 = [SKAction fadeInWithDuration:0.4];
     SKAction* act3 = [SKAction group:@[act1, act2]];
     SKAction* act4 = [SKAction sequence:@[act0, act3]];
-    [_setting runAction:act4];
+    [_settingButton runAction:act4];
 }
 
--(void)touchesBegan:(NSSet *)touches withEvent:(UIEvent *)event {
-    /* Called when a touch begins */
-    UITouch *touch = [touches anyObject];
-    CGPoint location = [touch locationInNode:self];
-    if ([self nodeAtPoint:location] == _setting){
-        [self showSettingPanel];
-    }
-    else if ([self nodeAtPoint:location] == _playHand){
-        
-    }
-}
+//-(void)touchesBegan:(NSSet *)touches withEvent:(UIEvent *)event {
+//    /* Called when a touch begins */
+//    NSLog(@"touchesBegan");
+//    UITouch *touch = [touches anyObject];
+//    CGPoint location = [touch locationInNode:self];
+////    if ([self nodeAtPoint:location] == _settingButton){
+////        [self showSettingPanel];
+////    }
+////    else if ([self nodeAtPoint:location] == _playHand){
+////        
+////    }
+//}
 
 - (void)showSettingPanel
 {
+    [self showBlackMask];
     if (_settingPanel == NULL)
     {
-        self.settingPanel = [RDSettingPanel spriteNodeWithImageNamed:@ROCK_PANEL];
+        self.settingPanel = [[RDSettingPanel alloc ] initWithImageNamed:@ROCK_PANEL];
         _settingPanel.position = CGPointMake(self.size.width/2, self.size.height/2);
         [_settingPanel setScale:gWorldScale];
         [self addChild:_settingPanel];
@@ -168,6 +187,19 @@
 
 -(void)update:(CFTimeInterval)currentTime {
     /* Called before each frame is rendered */
+}
+
+#pragma mark - RDActionProtocol
+- (void)touchesBeganOnNode:(RDSpriteNode*)node withTouches:(NSSet *)touches withEvent:(UIEvent *)event
+{
+    if (node == _settingButton)
+    {
+        [self showSettingPanel];
+    }
+    else if (node == _playHand)
+    {
+
+    }
 }
 
 @end

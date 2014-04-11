@@ -8,13 +8,15 @@
 
 #import <SpriteKit/SpriteKit.h>
 #import "RDSettingPanel.h"
+#import "RDSpriteNode.h"
 
-@interface RDHomeScene : SKScene
+@interface RDHomeScene : SKScene <RDActionProtocol>
 
 @property(nonatomic, strong) SKSpriteNode* leftEyeBall;
 @property(nonatomic, strong) SKSpriteNode* rightEyeBall;
-@property(nonatomic, strong) SKSpriteNode* setting;
+@property(nonatomic, strong) RDSpriteNode* settingButton;
 @property(nonatomic, strong) SKSpriteNode* playHand;
 @property(nonatomic, strong) SKSpriteNode* settingPanel;
+@property(nonatomic, strong) SKSpriteNode* blackMask;
 
 @end
