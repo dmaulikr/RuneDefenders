@@ -56,7 +56,7 @@
         _blackMask.userInteractionEnabled = YES;
         [self addChild:_blackMask];
     }
-    SKAction* act1 = [SKAction fadeAlphaTo:0.5 duration:0.2];
+    SKAction* act1 = [SKAction fadeAlphaTo:0.7 duration:0.2];
     assert(_blackMask);
     [_blackMask runAction:act1];
 }
@@ -160,12 +160,6 @@
 //    NSLog(@"touchesBegan");
 //    UITouch *touch = [touches anyObject];
 //    CGPoint location = [touch locationInNode:self];
-////    if ([self nodeAtPoint:location] == _settingButton){
-////        [self showSettingPanel];
-////    }
-////    else if ([self nodeAtPoint:location] == _playHand){
-////        
-////    }
 //}
 
 - (void)showSettingPanel
