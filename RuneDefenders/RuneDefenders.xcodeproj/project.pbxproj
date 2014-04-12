@@ -12,11 +12,9 @@
 		BE4818EE18F56628007CE091 /* blade_to_right@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = BE4818E918F56628007CE091 /* blade_to_right@2x.png */; };
 		BE4818EF18F56628007CE091 /* logo@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = BE4818EA18F56628007CE091 /* logo@2x.png */; };
 		BE4818F018F56628007CE091 /* more_game@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = BE4818EB18F56628007CE091 /* more_game@2x.png */; };
-		BE4818F118F56628007CE091 /* play_hand@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = BE4818EC18F56628007CE091 /* play_hand@2x.png */; };
 		BE4818F918F566AB007CE091 /* facebook@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = BE4818F418F566AB007CE091 /* facebook@2x.png */; };
 		BE4818FA18F566AB007CE091 /* no_btn@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = BE4818F518F566AB007CE091 /* no_btn@2x.png */; };
 		BE4818FB18F566AB007CE091 /* scroll_gear@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = BE4818F618F566AB007CE091 /* scroll_gear@2x.png */; };
-		BE4818FC18F566AB007CE091 /* setting@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = BE4818F718F566AB007CE091 /* setting@2x.png */; };
 		BE4818FD18F566AB007CE091 /* yes_btn@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = BE4818F818F566AB007CE091 /* yes_btn@2x.png */; };
 		BE48190118F566B5007CE091 /* eyeball@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = BE4818FE18F566B5007CE091 /* eyeball@2x.png */; };
 		BE48190218F566B5007CE091 /* rock_panel@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = BE4818FF18F566B5007CE091 /* rock_panel@2x.png */; };
@@ -27,6 +25,8 @@
 		BE61392018F920B3008D5A0D /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BE61391F18F920B3008D5A0D /* AudioToolbox.framework */; };
 		BE61392218F920B8008D5A0D /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BE61392118F920B8008D5A0D /* AVFoundation.framework */; };
 		BE61392518F9214D008D5A0D /* assets_audio_theme.m4a in Resources */ = {isa = PBXBuildFile; fileRef = BE61392418F9214D008D5A0D /* assets_audio_theme.m4a */; };
+		BE61392718F9251C008D5A0D /* play_hand.png in Resources */ = {isa = PBXBuildFile; fileRef = BE61392618F9251C008D5A0D /* play_hand.png */; };
+		BE61392918F9259F008D5A0D /* setting.png in Resources */ = {isa = PBXBuildFile; fileRef = BE61392818F9259F008D5A0D /* setting.png */; };
 		BE7F423918F7BF79003C165B /* RDActionProtocol.m in Sources */ = {isa = PBXBuildFile; fileRef = BE7F423818F7BF79003C165B /* RDActionProtocol.m */; };
 		BEEACDF718F5149A0011D7C6 /* RDHomeScene.m in Sources */ = {isa = PBXBuildFile; fileRef = BEEACDF618F5149A0011D7C6 /* RDHomeScene.m */; };
 		BEF0F3B418F3F4210056806B /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BEF0F3B318F3F4210056806B /* Foundation.framework */; };
@@ -63,11 +63,9 @@
 		BE4818E918F56628007CE091 /* blade_to_right@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "blade_to_right@2x.png"; path = "Image/tex_bg_1.atlas/blade_to_right@2x.png"; sourceTree = "<group>"; };
 		BE4818EA18F56628007CE091 /* logo@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "logo@2x.png"; path = "Image/tex_bg_1.atlas/logo@2x.png"; sourceTree = "<group>"; };
 		BE4818EB18F56628007CE091 /* more_game@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "more_game@2x.png"; path = "Image/tex_bg_1.atlas/more_game@2x.png"; sourceTree = "<group>"; };
-		BE4818EC18F56628007CE091 /* play_hand@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "play_hand@2x.png"; path = "Image/tex_bg_1.atlas/play_hand@2x.png"; sourceTree = "<group>"; };
 		BE4818F418F566AB007CE091 /* facebook@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "facebook@2x.png"; path = "Image/tex_fonts.atlas/facebook@2x.png"; sourceTree = "<group>"; };
 		BE4818F518F566AB007CE091 /* no_btn@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "no_btn@2x.png"; path = "Image/tex_fonts.atlas/no_btn@2x.png"; sourceTree = "<group>"; };
 		BE4818F618F566AB007CE091 /* scroll_gear@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "scroll_gear@2x.png"; path = "Image/tex_fonts.atlas/scroll_gear@2x.png"; sourceTree = "<group>"; };
-		BE4818F718F566AB007CE091 /* setting@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "setting@2x.png"; path = "Image/tex_fonts.atlas/setting@2x.png"; sourceTree = "<group>"; };
 		BE4818F818F566AB007CE091 /* yes_btn@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "yes_btn@2x.png"; path = "Image/tex_fonts.atlas/yes_btn@2x.png"; sourceTree = "<group>"; };
 		BE4818FE18F566B5007CE091 /* eyeball@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "eyeball@2x.png"; path = "Image/tex_ingame.atlas/eyeball@2x.png"; sourceTree = "<group>"; };
 		BE4818FF18F566B5007CE091 /* rock_panel@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "rock_panel@2x.png"; path = "Image/tex_ingame.atlas/rock_panel@2x.png"; sourceTree = "<group>"; };
@@ -82,6 +80,8 @@
 		BE61391F18F920B3008D5A0D /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
 		BE61392118F920B8008D5A0D /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
 		BE61392418F9214D008D5A0D /* assets_audio_theme.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = assets_audio_theme.m4a; sourceTree = "<group>"; };
+		BE61392618F9251C008D5A0D /* play_hand.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = play_hand.png; path = Image/tex_bg_1.atlas/play_hand.png; sourceTree = "<group>"; };
+		BE61392818F9259F008D5A0D /* setting.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = setting.png; path = Image/tex_fonts.atlas/setting.png; sourceTree = "<group>"; };
 		BE7F423718F7BF79003C165B /* RDActionProtocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = RDActionProtocol.h; path = RuneDefenders/Source/Common/RDActionProtocol.h; sourceTree = SOURCE_ROOT; };
 		BE7F423818F7BF79003C165B /* RDActionProtocol.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = RDActionProtocol.m; path = RuneDefenders/Source/Common/RDActionProtocol.m; sourceTree = SOURCE_ROOT; };
 		BEEACDF518F5149A0011D7C6 /* RDHomeScene.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = RDHomeScene.h; path = RuneDefenders/Source/Scene/RDHomeScene.h; sourceTree = SOURCE_ROOT; };
@@ -149,11 +149,11 @@
 		BE4818E718F56619007CE091 /* text_bg_1.atlas */ = {
 			isa = PBXGroup;
 			children = (
+				BE61392618F9251C008D5A0D /* play_hand.png */,
 				BE4818E818F56628007CE091 /* blade_to_left@2x.png */,
 				BE4818E918F56628007CE091 /* blade_to_right@2x.png */,
 				BE4818EA18F56628007CE091 /* logo@2x.png */,
 				BE4818EB18F56628007CE091 /* more_game@2x.png */,
-				BE4818EC18F56628007CE091 /* play_hand@2x.png */,
 			);
 			name = text_bg_1.atlas;
 			sourceTree = "<group>";
@@ -161,10 +161,10 @@
 		BE4818F218F5668E007CE091 /* tex_fonts.atlas */ = {
 			isa = PBXGroup;
 			children = (
+				BE61392818F9259F008D5A0D /* setting.png */,
 				BE4818F418F566AB007CE091 /* facebook@2x.png */,
 				BE4818F518F566AB007CE091 /* no_btn@2x.png */,
 				BE4818F618F566AB007CE091 /* scroll_gear@2x.png */,
-				BE4818F718F566AB007CE091 /* setting@2x.png */,
 				BE4818F818F566AB007CE091 /* yes_btn@2x.png */,
 			);
 			name = tex_fonts.atlas;
@@ -388,6 +388,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BE61392718F9251C008D5A0D /* play_hand.png in Resources */,
 				BE4818EE18F56628007CE091 /* blade_to_right@2x.png in Resources */,
 				BE48190118F566B5007CE091 /* eyeball@2x.png in Resources */,
 				BE48190318F566B5007CE091 /* white_halo@2x.png in Resources */,
@@ -396,15 +397,14 @@
 				BE4818F018F56628007CE091 /* more_game@2x.png in Resources */,
 				BE4818ED18F56628007CE091 /* blade_to_left@2x.png in Resources */,
 				BE4818FB18F566AB007CE091 /* scroll_gear@2x.png in Resources */,
-				BE4818FC18F566AB007CE091 /* setting@2x.png in Resources */,
 				BE4818F918F566AB007CE091 /* facebook@2x.png in Resources */,
 				BEF0F3D318F3F4210056806B /* Images.xcassets in Resources */,
 				BE4818FD18F566AB007CE091 /* yes_btn@2x.png in Resources */,
+				BE61392918F9259F008D5A0D /* setting.png in Resources */,
 				BE4818FA18F566AB007CE091 /* no_btn@2x.png in Resources */,
 				BE4818EF18F56628007CE091 /* logo@2x.png in Resources */,
 				BEF0F3C918F3F4210056806B /* Main.storyboard in Resources */,
 				BE48190218F566B5007CE091 /* rock_panel@2x.png in Resources */,
-				BE4818F118F56628007CE091 /* play_hand@2x.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
