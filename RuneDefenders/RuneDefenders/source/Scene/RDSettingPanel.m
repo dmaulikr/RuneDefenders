@@ -72,7 +72,7 @@
 {
     assert(_background);
     _background.alpha = 0;
-    SKAction* act1 = [SKAction fadeAlphaTo:0.5 duration:0.4];
+    SKAction* act1 = [SKAction fadeAlphaTo:0.5 duration:0.5];
     [_background runAction:act1];
 }
 
@@ -196,6 +196,7 @@
         location.x = MAX(location.x, SCROLL_XOFFSET);
         location.x = MIN(-SCROLL_XOFFSET, location.x);
         node.position = CGPointMake(location.x, node.position.y);
+        node.zRotation = (location.x - SCROLL_XOFFSET) / (2*SCROLL_XOFFSET)*2.5*PI;
     }
 }
 
