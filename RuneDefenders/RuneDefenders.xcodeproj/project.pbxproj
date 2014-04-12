@@ -23,6 +23,10 @@
 		BE48190318F566B5007CE091 /* white_halo@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = BE48190018F566B5007CE091 /* white_halo@2x.png */; };
 		BE48190918F56DD2007CE091 /* GlobalDef.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BE48190718F56DD2007CE091 /* GlobalDef.cpp */; };
 		BE54B0B518F6DA4E005D5EF5 /* RDSettingPanel.m in Sources */ = {isa = PBXBuildFile; fileRef = BE54B0B418F6DA4E005D5EF5 /* RDSettingPanel.m */; };
+		BE61391E18F92037008D5A0D /* TKAudioManager.mm in Sources */ = {isa = PBXBuildFile; fileRef = BE61391D18F92037008D5A0D /* TKAudioManager.mm */; };
+		BE61392018F920B3008D5A0D /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BE61391F18F920B3008D5A0D /* AudioToolbox.framework */; };
+		BE61392218F920B8008D5A0D /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BE61392118F920B8008D5A0D /* AVFoundation.framework */; };
+		BE61392518F9214D008D5A0D /* assets_audio_theme.m4a in Resources */ = {isa = PBXBuildFile; fileRef = BE61392418F9214D008D5A0D /* assets_audio_theme.m4a */; };
 		BE7F423918F7BF79003C165B /* RDActionProtocol.m in Sources */ = {isa = PBXBuildFile; fileRef = BE7F423818F7BF79003C165B /* RDActionProtocol.m */; };
 		BEEACDF718F5149A0011D7C6 /* RDHomeScene.m in Sources */ = {isa = PBXBuildFile; fileRef = BEEACDF618F5149A0011D7C6 /* RDHomeScene.m */; };
 		BEF0F3B418F3F4210056806B /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BEF0F3B318F3F4210056806B /* Foundation.framework */; };
@@ -73,6 +77,11 @@
 		BE48190A18F56F46007CE091 /* RDHomeSceneDefs.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = RDHomeSceneDefs.h; path = RuneDefenders/Source/Scene/RDHomeSceneDefs.h; sourceTree = SOURCE_ROOT; };
 		BE54B0B318F6DA4E005D5EF5 /* RDSettingPanel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = RDSettingPanel.h; path = RuneDefenders/Source/Scene/RDSettingPanel.h; sourceTree = SOURCE_ROOT; };
 		BE54B0B418F6DA4E005D5EF5 /* RDSettingPanel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = RDSettingPanel.m; path = RuneDefenders/Source/Scene/RDSettingPanel.m; sourceTree = SOURCE_ROOT; };
+		BE61391C18F92037008D5A0D /* TKAudioManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TKAudioManager.h; sourceTree = "<group>"; };
+		BE61391D18F92037008D5A0D /* TKAudioManager.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = TKAudioManager.mm; sourceTree = "<group>"; };
+		BE61391F18F920B3008D5A0D /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
+		BE61392118F920B8008D5A0D /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
+		BE61392418F9214D008D5A0D /* assets_audio_theme.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = assets_audio_theme.m4a; sourceTree = "<group>"; };
 		BE7F423718F7BF79003C165B /* RDActionProtocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = RDActionProtocol.h; path = RuneDefenders/Source/Common/RDActionProtocol.h; sourceTree = SOURCE_ROOT; };
 		BE7F423818F7BF79003C165B /* RDActionProtocol.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = RDActionProtocol.m; path = RuneDefenders/Source/Common/RDActionProtocol.m; sourceTree = SOURCE_ROOT; };
 		BEEACDF518F5149A0011D7C6 /* RDHomeScene.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = RDHomeScene.h; path = RuneDefenders/Source/Scene/RDHomeScene.h; sourceTree = SOURCE_ROOT; };
@@ -104,6 +113,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BE61392218F920B8008D5A0D /* AVFoundation.framework in Frameworks */,
+				BE61392018F920B3008D5A0D /* AudioToolbox.framework in Frameworks */,
 				BEF0F3B618F3F4210056806B /* CoreGraphics.framework in Frameworks */,
 				BEF0F3B818F3F4210056806B /* UIKit.framework in Frameworks */,
 				BEF0F3BA18F3F4210056806B /* SpriteKit.framework in Frameworks */,
@@ -127,6 +138,8 @@
 		BE189E6918F784B200E82E86 /* Common */ = {
 			isa = PBXGroup;
 			children = (
+				BE61391C18F92037008D5A0D /* TKAudioManager.h */,
+				BE61391D18F92037008D5A0D /* TKAudioManager.mm */,
 				BE7F423718F7BF79003C165B /* RDActionProtocol.h */,
 				BE7F423818F7BF79003C165B /* RDActionProtocol.m */,
 			);
@@ -165,6 +178,14 @@
 				BE48190018F566B5007CE091 /* white_halo@2x.png */,
 			);
 			name = tex_ingame.atlas;
+			sourceTree = "<group>";
+		};
+		BE61392318F9214D008D5A0D /* Sound */ = {
+			isa = PBXGroup;
+			children = (
+				BE61392418F9214D008D5A0D /* assets_audio_theme.m4a */,
+			);
+			path = Sound;
 			sourceTree = "<group>";
 		};
 		BEEACDE318F4E5220011D7C6 /* Source */ = {
@@ -233,6 +254,8 @@
 		BEF0F3B218F3F4210056806B /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				BE61392118F920B8008D5A0D /* AVFoundation.framework */,
+				BE61391F18F920B3008D5A0D /* AudioToolbox.framework */,
 				BEF0F3B318F3F4210056806B /* Foundation.framework */,
 				BEF0F3B518F3F4210056806B /* CoreGraphics.framework */,
 				BEF0F3B718F3F4210056806B /* UIKit.framework */,
@@ -252,6 +275,7 @@
 				BEF0F3CB18F3F4210056806B /* RDViewController.m */,
 				BEF0F3D218F3F4210056806B /* Images.xcassets */,
 				BEEACDE318F4E5220011D7C6 /* Source */,
+				BE61392318F9214D008D5A0D /* Sound */,
 				BEEACDEC18F511290011D7C6 /* Image */,
 				BEF0F3BC18F3F4210056806B /* Supporting Files */,
 			);
@@ -367,6 +391,7 @@
 				BE4818EE18F56628007CE091 /* blade_to_right@2x.png in Resources */,
 				BE48190118F566B5007CE091 /* eyeball@2x.png in Resources */,
 				BE48190318F566B5007CE091 /* white_halo@2x.png in Resources */,
+				BE61392518F9214D008D5A0D /* assets_audio_theme.m4a in Resources */,
 				BEF0F3C018F3F4210056806B /* InfoPlist.strings in Resources */,
 				BE4818F018F56628007CE091 /* more_game@2x.png in Resources */,
 				BE4818ED18F56628007CE091 /* blade_to_left@2x.png in Resources */,
@@ -400,6 +425,7 @@
 			files = (
 				BE54B0B518F6DA4E005D5EF5 /* RDSettingPanel.m in Sources */,
 				BE48190918F56DD2007CE091 /* GlobalDef.cpp in Sources */,
+				BE61391E18F92037008D5A0D /* TKAudioManager.mm in Sources */,
 				BEEACDF718F5149A0011D7C6 /* RDHomeScene.m in Sources */,
 				BEF0F3C618F3F4210056806B /* RDAppDelegate.m in Sources */,
 				BE4802A818F789EE008E95D7 /* SpriteDef.cpp in Sources */,

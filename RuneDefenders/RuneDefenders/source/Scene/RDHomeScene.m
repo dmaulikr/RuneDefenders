@@ -10,6 +10,11 @@
 #import "SpriteDef.h"
 #import "GlobalDef.h"
 #import "RDHomeSceneDefs.h"
+#import "TKAudioManager.h"
+
+@interface RDHomeScene ()
+@property (nonatomic, strong) TKAudioManager* audioManager;
+@end
 
 @implementation RDHomeScene
 
@@ -41,8 +46,15 @@
         [self addFacebook];
         [self addSettingButton];
         [self addPlayHand];
+        [self addAudio];
     }
     return self;
+}
+
+- (void)addAudio
+{
+    self.audioManager = [[TKAudioManager alloc] init];
+    [_audioManager playBGM:@"assets_audio_theme.m4a"];
 }
 
 - (void)addEyeBall
@@ -152,9 +164,9 @@
     {
         self.settingPanel = [[RDSettingPanel alloc ] init];
         _settingPanel.position = CGPointMake(self.size.width/2, self.size.height/2);
-        [self addChild:_settingPanel];
     }
-
+    [self addChild:_settingPanel];
+    [_settingPanel showAction];
 }
 
 -(void)update:(CFTimeInterval)currentTime {
@@ -170,7 +182,7 @@
     }
     else if (node == _playHand)
     {
-
+        // enter game
     }
 }
 

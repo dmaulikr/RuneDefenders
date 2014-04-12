@@ -12,5 +12,8 @@
 @interface RDSettingPanel : SKNode <RDActionProtocol>
 
 @property (nonatomic, retain) SKSpriteNode* panel;
+@property (nonatomic, retain) SKSpriteNode* background;
+
+- (void)showAction;
 
 @end

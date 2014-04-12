@@ -62,23 +62,41 @@
     return self;
 }
 
+- (void)showAction
+{
+    [self showBackgroundAction];
+    [self showPanelAction];
+}
+
+- (void)showBackgroundAction
+{
+    assert(_background);
+    _background.alpha = 0;
+    SKAction* act1 = [SKAction fadeAlphaTo:0.5 duration:0.4];
+    [_background runAction:act1];
+}
+
+- (void)showPanelAction
+{
+    assert(_panel);
+    [_panel setScale:0.2];
+    SKAction* act1 = [SKAction scaleTo:1.15*gWorldScale duration:0.3];
+    SKAction* act2 = [SKAction scaleTo:1.0*gWorldScale duration:0.15];
+    SKAction* act3 = [SKAction sequence:@[act1, act2]];
+    [_panel runAction:act3];
+}
+
 - (void)addBackground
 {
-    SKSpriteNode* background = [SKSpriteNode spriteNodeWithColor:[UIColor blackColor] size:CGSizeMake(gDeviceWidth/gWorldScale, gDeviceHeight/gWorldScale)];
-    background.alpha = 0.5;
-    [self addChild:background];
+    self.background = [SKSpriteNode spriteNodeWithColor:[UIColor blackColor] size:CGSizeMake(gDeviceWidth/gWorldScale, gDeviceHeight/gWorldScale)];
+    _background.alpha = 0;
+    [self addChild:_background];
 }
 
 - (void)addPanel
 {
     self.panel = [SKSpriteNode spriteNodeWithImageNamed:@ROCK_PANEL];
-    [_panel setScale:0.2];
     [self addChild:_panel];
-
-    SKAction* act1 = [SKAction scaleTo:1.15*gWorldScale duration:0.3];
-    SKAction* act2 = [SKAction scaleTo:1.0*gWorldScale duration:0.15];
-    SKAction* act3 = [SKAction sequence:@[act1, act2]];
-    [_panel runAction:act3];
 }
 
 - (void)addTitleLabel
@@ -171,11 +189,13 @@
 
 - (void)touchesMovedOnNode:(SKSpriteNode *)node withTouches:(NSSet *)touches withEvent:(UIEvent *)event
 {
-    if ([node.name compare:MUSIC_SCROLL_GEAR_NAME] == NSOrderedSame)
+    if ([node.name compare:MUSIC_SCROLL_GEAR_NAME] == NSOrderedSame ||
+        [node.name compare:SOUND_SCROLL_GEAR_NAME] == NSOrderedSame)
     {
-    }
-    else if ([node.name compare:SOUND_SCROLL_GEAR_NAME] == NSOrderedSame)
-    {
+        CGPoint location = [[touches anyObject] locationInNode:_panel];
+        location.x = MAX(location.x, SCROLL_XOFFSET);
+        location.x = MIN(-SCROLL_XOFFSET, location.x);
+        node.position = CGPointMake(location.x, node.position.y);
     }
 }
 

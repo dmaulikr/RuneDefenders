@@ -16,7 +16,7 @@
 @property(nonatomic, strong) SKSpriteNode* rightEyeBall;
 @property(nonatomic, strong) RDSpriteNode* settingButton;
 @property(nonatomic, strong) SKSpriteNode* playHand;
-@property(nonatomic, strong) SKNode* settingPanel;
+@property(nonatomic, strong) RDSettingPanel* settingPanel;
 @property(nonatomic, strong) SKSpriteNode* blackMask;
 
 @end
