@@ -27,6 +27,7 @@
         // background
         SKSpriteNode* home = [SKSpriteNode spriteNodeWithImageNamed:@HOME];
         home.position = CGPointMake(size.width/2, size.height/2);
+        home.blendMode = SKBlendModeReplace;
         [self addChild:home];
         //NSLog(@"width:%f height:%f", home.size.width, home.size.height);
         
